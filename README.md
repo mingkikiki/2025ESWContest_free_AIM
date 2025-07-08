@@ -48,15 +48,19 @@ The software components used in this project are licensed as follows:
 
 | Component                               | License                                                                         | Type                  | Key Obligations                                     |
 | --------------------------------------- | ------------------------------------------------------------------------------- | --------------------- | --------------------------------------------------- |
-| **Ultralytics YOLOv8**                  | [AGPL-3.0](https://www.gnu.org/licenses/agpl-3.0.html)                            | Strong Copyleft       | **Source code disclosure required for distribution**|
-| **TensorFlow / Keras**                  | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Permissive            | Retain copyright/license notices                    |
-| **OpenCV**                              | [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0)                 | Permissive            | Retain copyright/license notices                    |
-| **NumPy / scikit-learn**                | [BSD 3-Clause License](https://opensource.org/licenses/BSD-3-Clause)              | Permissive            | Retain copyright/license notices                    |
-| **Pygame**                              | [LGPL 2.1](https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html)               | Weak Copyleft         | Disclose modifications to the library itself        |
+| **Ultralytics YOLOv8**                  | AGPL-3.0                            | Strong Copyleft       | **Source code disclosure required for distribution**|
+| **TensorFlow / Keras**                  | Apache License 2.0                | Permissive            | Retain copyright/license notices                    |
+| **OpenCV**                              | Apache License 2.0                | Permissive            | Retain copyright/license notices                    |
+| **NumPy / scikit-learn**                | BSD 3-Clause License              | Permissive            | Retain copyright/license notices                    |
+| **Pygame**                              | LGPL 2.1               | Weak Copyleft         | Disclose modifications to the library itself        |
+| **STM32 PWM code**                      | GPL 2.0       | Strong Copyleft       | Source code disclosure required when distributing   |
 
 ### Summary
 
--   **For Personal/Academic Use**: You are free to use, modify, and distribute this project for non-commercial, academic, or personal purposes, provided you comply with the terms of the AGPL-3.0 license (which primarily involves making your source code available).
--   **For Commercial Use**: If you wish to use this project in a commercial product without being subject to the source code disclosure requirements of the AGPL-3.0, you **must obtain a separate commercial license for YOLOv8 from Ultralytics**. The other components (TensorFlow, OpenCV, etc.) are commercially friendly.
+-   **For Personal/Academic Use**: You are free to use, modify, and distribute this project for non-commercial, academic, or personal purposes, provided you comply with the terms of the AGPL-3.0 **and GPL-2.0** licenses (which primarily involve making your source code available).
+-   **For Commercial Use**: If you wish to use this project in a commercial product without being subject to the source code disclosure requirements of the AGPL-3.0 or GPL-2.0, you **must obtain a separate commercial license for YOLOv8 from Ultralytics**, and ensure compatibility or relicensing for any GPL-2.0 components. The other components (TensorFlow, OpenCV, etc.) are commercially friendly.
+
+-   **Note**: The STM32 PWM code is fully independent from the AI-related components (e.g., YOLOv8, TensorFlow, etc.), and is included in the repository for use in hardware control scenarios.
+
 
 For the full text of the governing license for this project, please see the [LICENSE](LICENSE) file.
