@@ -1,0 +1,5779 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "d9380915-48cd-4551-ac57-6f3b373ef610")
+	(paper "A4")
+	(title_block
+		(title "transducer_array")
+		(date "2025-07-09")
+		(rev "2.0")
+	)
+	(lib_symbols
+		(symbol "Device:Speaker_Crystal"
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "LS"
+				(at 0.635 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Value" "Speaker_Crystal"
+				(at 0.635 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right)
+				)
+			)
+			(property "Footprint" ""
+				(at -0.889 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at -0.889 -1.27 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Crystal speaker/transducer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "crystal speaker ultrasonic transducer"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Speaker_Crystal_0_0"
+				(rectangle
+					(start -2.54 1.27)
+					(end 1.143 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.032 -0.635)
+					(end 0.635 -1.905)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 -0.254) (xy 0.381 -0.254)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.651 -2.286) (xy 0.381 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -0.254) (xy -0.635 0.508)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.635 -2.286) (xy -0.635 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.143 1.27) (xy 3.683 3.81) (xy 3.683 -6.35) (xy 1.143 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Speaker_Crystal_1_1"
+				(pin input line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "Transducer_Array"
+		(exclude_from_sim no)
+		(at 210.058 173.736 0)
+		(effects
+			(font
+				(size 5 5)
+				(thickness 1)
+				(bold yes)
+			)
+		)
+		(uuid "16871033-8c96-4626-987c-eae0b25a4983")
+	)
+	(text "outA is (+) / outB is (-)\n"
+		(exclude_from_sim no)
+		(at 48.768 169.164 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "1dad10fd-9e20-4f91-adbd-dc75057ccbda")
+	)
+	(text "7 x 3 = 21"
+		(exclude_from_sim no)
+		(at 172.974 23.622 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "5b0a5b33-d9ac-43fa-9e1d-f6d49d0eeafa")
+	)
+	(text "7 x 3 = 21"
+		(exclude_from_sim no)
+		(at 76.2 22.86 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "5ee1c34f-4f5f-40b7-8532-054e84d6e8a3")
+	)
+	(text "\"Polarity may not matter, but phase alignment does. \nAlways connect the same signal to the same pin across components - \ndon't mix them up.\""
+		(exclude_from_sim no)
+		(at 19.304 184.404 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "6cf04428-6317-4533-a111-92537b7779f5")
+	)
+	(text "outA is (+) / outB is (-)\n"
+		(exclude_from_sim no)
+		(at 209.55 162.052 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "a72e34a2-9725-451d-a717-7440d0f370aa")
+	)
+	(junction
+		(at 201.93 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "03830f49-7607-407b-915f-37627969bfc0")
+	)
+	(junction
+		(at 78.74 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0465af69-6ee5-4ceb-a946-f4a2dc2594d8")
+	)
+	(junction
+		(at 24.13 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05c6f30a-2593-4497-99aa-d355da731e26")
+	)
+	(junction
+		(at 46.99 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0798e47e-e974-41fe-84ee-d4f930646487")
+	)
+	(junction
+		(at 237.49 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08eac4f2-79c0-46b8-a876-86b98b7e2d6d")
+	)
+	(junction
+		(at 78.74 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "09fc4a37-1f77-4a64-a1b5-1eb2b4971c9f")
+	)
+	(junction
+		(at 201.93 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0c562abe-8326-4c04-bf33-cf0588f7facd")
+	)
+	(junction
+		(at 44.45 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "12f4972b-e740-4cdc-8b9b-8275d6288cff")
+	)
+	(junction
+		(at 24.13 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1635e6d1-43ad-415d-971b-33ac373af5f4")
+	)
+	(junction
+		(at 76.2 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c00d5ae-408b-423d-b6ab-0e321d1f77d8")
+	)
+	(junction
+		(at 237.49 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1f5e2725-116d-4276-82a6-d24fb32ae474")
+	)
+	(junction
+		(at 199.39 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "230acc00-9afb-4a8f-92a8-d76b2c5f623d")
+	)
+	(junction
+		(at 237.49 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2901aedc-5563-442a-8c99-d08f7516bf30")
+	)
+	(junction
+		(at 78.74 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2927c1af-f2b3-4e05-af32-f007c28a2ef6")
+	)
+	(junction
+		(at 167.64 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2cd55a57-82f9-4587-869c-b12fbe73c7e7")
+	)
+	(junction
+		(at 170.18 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2dc540c8-9ede-4de3-9a1a-12154ca42067")
+	)
+	(junction
+		(at 46.99 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f73ae31-9b82-4eb2-9948-89ab71ed5347")
+	)
+	(junction
+		(at 242.57 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "33498c6e-abfd-4b63-84ab-fedffaf65103")
+	)
+	(junction
+		(at 24.13 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49286676-9033-46a1-b2c9-e644feeba195")
+	)
+	(junction
+		(at 46.99 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "49378ad2-13e9-409f-8c9c-5f7d3ffe26a6")
+	)
+	(junction
+		(at 19.05 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5029f415-9f19-40cd-abc0-e3593f81166e")
+	)
+	(junction
+		(at 24.13 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50fc7871-7d24-4893-a7e4-e4772fdbff9c")
+	)
+	(junction
+		(at 199.39 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "519dfb3a-84a4-4717-b4c4-ac643bef1a02")
+	)
+	(junction
+		(at 44.45 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "539aaa16-eaaf-4ae8-a841-819c77731279")
+	)
+	(junction
+		(at 199.39 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "545c65d3-c8ea-4f7f-9029-a9667d5bfce0")
+	)
+	(junction
+		(at 242.57 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "54953c1a-2d21-4dc6-8546-27acf0247dda")
+	)
+	(junction
+		(at 24.13 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "584293ac-77c2-435f-8989-571c94d15118")
+	)
+	(junction
+		(at 167.64 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "61194da8-e5f8-45b6-9517-63060ca891f6")
+	)
+	(junction
+		(at 24.13 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "626066ab-477c-4ff6-9eeb-2de0b85ec30a")
+	)
+	(junction
+		(at 199.39 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6653a4f0-4dc5-4cdc-802e-67be7681832e")
+	)
+	(junction
+		(at 78.74 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "69a6df8f-8b17-47c0-b061-2f82288a1690")
+	)
+	(junction
+		(at 78.74 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dd789ca-ec60-40f2-aa5d-3034ced3c205")
+	)
+	(junction
+		(at 44.45 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6ed80f3c-de7c-498e-b320-155ccc8fc340")
+	)
+	(junction
+		(at 167.64 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "74f65f09-9ab2-4dd9-9d85-c35e018ad09f")
+	)
+	(junction
+		(at 19.05 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "771542db-3df1-42c0-adbf-a9b81e340859")
+	)
+	(junction
+		(at 170.18 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "872b3aea-bb23-46c6-9fcc-3dec672996b3")
+	)
+	(junction
+		(at 19.05 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "87605215-e854-4ef9-8542-5332c591221b")
+	)
+	(junction
+		(at 167.64 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8aafc659-eccd-4df3-ba07-355c0dec0a52")
+	)
+	(junction
+		(at 242.57 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8cf96724-b6fd-4df6-8a0e-7299ffc32efb")
+	)
+	(junction
+		(at 170.18 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "93be5fbc-185a-4a8f-a026-25a8f2b47e70")
+	)
+	(junction
+		(at 199.39 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9539a2cf-eada-4e44-bc8f-e110a0414690")
+	)
+	(junction
+		(at 19.05 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99b0d12a-3cc6-43d3-ac0e-d0b4be45ed35")
+	)
+	(junction
+		(at 242.57 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "99ed1c29-4a29-4b83-be01-477060dd61a4")
+	)
+	(junction
+		(at 201.93 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9ef5d04d-b1e6-4b4a-8d22-0fecceb079dc")
+	)
+	(junction
+		(at 46.99 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a10bf2e6-63e4-4a69-967e-5181a33defe1")
+	)
+	(junction
+		(at 76.2 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a255df56-541e-45cc-9296-6c2851deb1ee")
+	)
+	(junction
+		(at 46.99 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5d7d493-d177-4be0-8f12-d4a1b1f7e6ec")
+	)
+	(junction
+		(at 167.64 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6006f90-a67a-470d-9261-13421c97f5d0")
+	)
+	(junction
+		(at 44.45 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a64ebd7c-1871-4880-9c79-5e6a494dd7aa")
+	)
+	(junction
+		(at 170.18 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8656286-33a1-40a2-842e-d5aac3889da4")
+	)
+	(junction
+		(at 78.74 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aa1ed0da-64a2-4256-94d0-2aff43944f57")
+	)
+	(junction
+		(at 167.64 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab315601-6c55-4808-a07d-3a66caeb6ef4")
+	)
+	(junction
+		(at 19.05 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b0a52d16-079e-4988-83b5-b2c187cf5182")
+	)
+	(junction
+		(at 199.39 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2cb4748-618e-42cf-ae64-c94d39148619")
+	)
+	(junction
+		(at 201.93 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b368f667-c37e-4f8d-844c-dc5e2960aa2b")
+	)
+	(junction
+		(at 76.2 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b48150fd-c6ba-4d51-8c5f-b52fd633d205")
+	)
+	(junction
+		(at 170.18 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b915f109-a8b5-454c-8396-b5f65c645ce1")
+	)
+	(junction
+		(at 46.99 111.76)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ba062427-aa2d-4e3e-8819-b3552e4c41d0")
+	)
+	(junction
+		(at 76.2 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bee9f285-28e5-4a18-83b2-21af3cb8184d")
+	)
+	(junction
+		(at 170.18 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bf25206f-f312-498a-a341-ffa6b00d2afd")
+	)
+	(junction
+		(at 76.2 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c7b23079-8f00-40d2-b2ad-911d6c689bfa")
+	)
+	(junction
+		(at 46.99 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c93f3732-ed81-4733-bf84-62d23c9a17b4")
+	)
+	(junction
+		(at 201.93 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "caa581a5-3057-4932-b782-fa57b43a348d")
+	)
+	(junction
+		(at 167.64 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc8c672c-346d-46f5-99a3-f1a713c77d8b")
+	)
+	(junction
+		(at 237.49 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cd0ff7fc-3d50-404c-915a-8c6238546986")
+	)
+	(junction
+		(at 242.57 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cff2661d-b376-4f48-96b9-d2d2c3a77204")
+	)
+	(junction
+		(at 78.74 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d24722f3-9a26-4530-868b-e1c270d455d3")
+	)
+	(junction
+		(at 237.49 144.78)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d8abdfb2-6fdd-4674-9632-e56be87c44b2")
+	)
+	(junction
+		(at 44.45 127)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "db676e97-3d4c-4e10-a9d9-d48d08b9116f")
+	)
+	(junction
+		(at 170.18 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "de66ceba-7551-4f16-b886-8088e8697d4b")
+	)
+	(junction
+		(at 242.57 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e4defdd3-4126-4c7d-a78b-45262f38af35")
+	)
+	(junction
+		(at 201.93 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9964a20-0530-4129-a9f4-5e66020436c4")
+	)
+	(junction
+		(at 44.45 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ebd39253-4219-4f9b-9f90-f25525b51a55")
+	)
+	(junction
+		(at 199.39 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ed9cc67c-9abd-406e-a226-3907e9706b8c")
+	)
+	(junction
+		(at 76.2 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee46bf47-cb50-41c1-9442-55e618450d5c")
+	)
+	(junction
+		(at 76.2 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ee68f047-2a56-4c35-95ff-3d5633400d27")
+	)
+	(junction
+		(at 44.45 142.24)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f0dc5391-45ea-47ae-8cd5-ed01dc178727")
+	)
+	(junction
+		(at 237.49 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f1e4b39a-edc7-4cda-835f-4dcb57228d5a")
+	)
+	(junction
+		(at 201.93 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f923301c-4962-45c9-a64c-3e00e039db33")
+	)
+	(junction
+		(at 19.05 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb695ae8-4c00-474a-b27a-27f0c593fa4c")
+	)
+	(wire
+		(pts
+			(xy 44.45 91.44) (xy 44.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0022b445-0685-4799-9f29-9e3b7a38760f")
+	)
+	(wire
+		(pts
+			(xy 105.41 57.15) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03241d08-ef12-4f99-9a3a-ab63171814e4")
+	)
+	(wire
+		(pts
+			(xy 24.13 80.01) (xy 24.13 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "03eabd88-8d4e-4437-96e6-5edeacdffa03")
+	)
+	(wire
+		(pts
+			(xy 137.16 111.76) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "078797c9-5272-423d-a08b-45f92cf05bb0")
+	)
+	(wire
+		(pts
+			(xy 19.05 43.18) (xy 19.05 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "089d0dfb-20c3-46f7-9a1d-381a48d2de37")
+	)
+	(wire
+		(pts
+			(xy 167.64 106.68) (xy 167.64 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0ac8ed30-965a-43bc-8d28-13037da2f5a0")
+	)
+	(wire
+		(pts
+			(xy 237.49 45.72) (xy 237.49 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0b57a7af-9479-4787-8068-3ca02e6ebfd3")
+	)
+	(wire
+		(pts
+			(xy 242.57 154.94) (xy 247.65 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c883d0a-e94a-4559-a8fc-4301881b39fc")
+	)
+	(wire
+		(pts
+			(xy 170.18 127) (xy 201.93 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d5c3886-c960-4bb6-aaf7-7b0693243ff1")
+	)
+	(wire
+		(pts
+			(xy 19.05 142.24) (xy 19.05 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0fcea1f2-9519-41b4-ae9e-acbacc2438a2")
+	)
+	(wire
+		(pts
+			(xy 201.93 74.93) (xy 201.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10bd3acf-4bb8-46b8-9f98-cbbb3defe264")
+	)
+	(wire
+		(pts
+			(xy 107.95 91.44) (xy 107.95 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10f771e0-0668-43f4-8ad5-eba69ef55a93")
+	)
+	(wire
+		(pts
+			(xy 24.13 111.76) (xy 46.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1268e86d-125b-4e65-adb5-6622ec152b12")
+	)
+	(wire
+		(pts
+			(xy 107.95 40.64) (xy 107.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "14f68c64-e820-41bf-b022-4e0b64c93d33")
+	)
+	(wire
+		(pts
+			(xy 76.2 127) (xy 105.41 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "170dd834-f4d0-41c8-85b0-72f9327d7347")
+	)
+	(wire
+		(pts
+			(xy 19.05 127) (xy 44.45 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "173f0b1d-0a97-44b1-951b-845de5878ddd")
+	)
+	(wire
+		(pts
+			(xy 167.64 124.46) (xy 167.64 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "180935e8-f5ed-4fa1-8a41-349a35e2296e")
+	)
+	(wire
+		(pts
+			(xy 44.45 142.24) (xy 76.2 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18ff790c-21a9-463f-b817-6944e4f9113b")
+	)
+	(wire
+		(pts
+			(xy 46.99 144.78) (xy 78.74 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "194489d5-0332-47c5-9f80-b275ebfb7999")
+	)
+	(wire
+		(pts
+			(xy 139.7 139.7) (xy 139.7 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a6a4fde-0ed2-4c2b-8caa-b8a4b688e234")
+	)
+	(wire
+		(pts
+			(xy 242.57 59.69) (xy 242.57 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1b4f68f4-9c0f-420d-87be-5639c2e60886")
+	)
+	(wire
+		(pts
+			(xy 139.7 77.47) (xy 170.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d28b91c-b8de-4fa5-8408-dff26cb1b8ad")
+	)
+	(wire
+		(pts
+			(xy 199.39 96.52) (xy 237.49 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d4561b6-c38d-4d1b-84c7-056b76a15187")
+	)
+	(wire
+		(pts
+			(xy 167.64 45.72) (xy 199.39 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d6ccff3-f415-460d-b509-743497bfd301")
+	)
+	(wire
+		(pts
+			(xy 76.2 124.46) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d903f09-8af4-4932-bbb7-bf5a2dd29aaa")
+	)
+	(wire
+		(pts
+			(xy 199.39 106.68) (xy 199.39 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e5f3408-0f09-436d-92a6-f90b1ee1162b")
+	)
+	(wire
+		(pts
+			(xy 46.99 91.44) (xy 46.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1fe376d7-4e47-430c-b8b4-4e68f4d70019")
+	)
+	(wire
+		(pts
+			(xy 76.2 57.15) (xy 76.2 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "20733fc3-7d96-4fbb-be72-f0fd9aab83fb")
+	)
+	(wire
+		(pts
+			(xy 137.16 45.72) (xy 167.64 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "208e7706-1e9a-464f-b377-98fe06ae664a")
+	)
+	(wire
+		(pts
+			(xy 46.99 96.52) (xy 78.74 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23729d5e-b685-4485-84da-530059866703")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 199.39 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2419d2f7-469c-4e45-86de-a048af98c234")
+	)
+	(wire
+		(pts
+			(xy 46.99 74.93) (xy 46.99 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24a1212f-d1a8-4d82-b1e4-833c468c53ad")
+	)
+	(wire
+		(pts
+			(xy 46.99 80.01) (xy 78.74 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29b76349-f9ee-4c26-998b-02c6ce108bc0")
+	)
+	(wire
+		(pts
+			(xy 201.93 43.18) (xy 242.57 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b791b04-20e7-4431-908e-4dffea54a9b4")
+	)
+	(wire
+		(pts
+			(xy 170.18 57.15) (xy 170.18 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2bd34b55-575b-4b57-bdb6-5584e29c0287")
+	)
+	(wire
+		(pts
+			(xy 76.2 40.64) (xy 76.2 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cbef404-df37-44f4-83f1-d27346414f8c")
+	)
+	(wire
+		(pts
+			(xy 137.16 106.68) (xy 137.16 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d3cff80-dfc9-4ea5-a629-fd99867e95ae")
+	)
+	(wire
+		(pts
+			(xy 139.7 40.64) (xy 139.7 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ea44513-8b01-49c0-a7ff-4c4ba9a11a4f")
+	)
+	(wire
+		(pts
+			(xy 44.45 124.46) (xy 44.45 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "32b5b87b-ee5b-4ba6-a97c-b9dfaec3af56")
+	)
+	(wire
+		(pts
+			(xy 105.41 74.93) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "347f4941-d1b3-4e71-a0f9-4d38b5bb5c0e")
+	)
+	(wire
+		(pts
+			(xy 201.93 57.15) (xy 201.93 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38e9c5a8-3609-420e-893b-03606039eff7")
+	)
+	(wire
+		(pts
+			(xy 78.74 111.76) (xy 107.95 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c07f7c9-9ed6-433e-9354-efa62dd54808")
+	)
+	(wire
+		(pts
+			(xy 76.2 109.22) (xy 105.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d660717-1180-4a2d-9cb3-fc4030e9860b")
+	)
+	(wire
+		(pts
+			(xy 46.99 57.15) (xy 46.99 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ffc03d6-dec7-430b-904e-ee401d3ea04f")
+	)
+	(wire
+		(pts
+			(xy 44.45 106.68) (xy 44.45 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4260b6f6-c8bc-4444-9a12-48a3539b5512")
+	)
+	(wire
+		(pts
+			(xy 44.45 77.47) (xy 76.2 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "432d372d-b3e7-48fe-ae7b-65025b518c42")
+	)
+	(wire
+		(pts
+			(xy 105.41 106.68) (xy 105.41 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45839423-0add-4936-96dd-d1e551477fce")
+	)
+	(wire
+		(pts
+			(xy 237.49 80.01) (xy 237.49 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "45f7d054-8543-4195-aa78-586e5d68e874")
+	)
+	(wire
+		(pts
+			(xy 137.16 57.15) (xy 137.16 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a645efd-957c-432d-9ccb-689fadcae82a")
+	)
+	(wire
+		(pts
+			(xy 46.99 45.72) (xy 78.74 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d0c43f2-5994-4419-8532-3078512c0e09")
+	)
+	(wire
+		(pts
+			(xy 199.39 45.72) (xy 237.49 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e439ddb-3320-4269-9de3-aa12cc105635")
+	)
+	(wire
+		(pts
+			(xy 46.99 129.54) (xy 78.74 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4f174d64-f799-45d7-b685-a715bbc851cb")
+	)
+	(wire
+		(pts
+			(xy 237.49 161.29) (xy 247.65 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "542f8278-ce24-422c-9f48-380360e7da27")
+	)
+	(wire
+		(pts
+			(xy 170.18 124.46) (xy 170.18 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "554da2c4-a553-4a3a-b8fd-b26c8c565a22")
+	)
+	(wire
+		(pts
+			(xy 139.7 74.93) (xy 139.7 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "590d7812-f63f-4d28-a936-cc30e93880a9")
+	)
+	(wire
+		(pts
+			(xy 78.74 74.93) (xy 78.74 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "596f5732-8668-4fdf-ac37-05d36e0250a3")
+	)
+	(wire
+		(pts
+			(xy 237.49 96.52) (xy 237.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a258094-5a9d-44ef-bbcb-50ee76fc6146")
+	)
+	(wire
+		(pts
+			(xy 107.95 124.46) (xy 107.95 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5b799eaa-8cf4-43cd-bebe-36a319baa666")
+	)
+	(wire
+		(pts
+			(xy 139.7 124.46) (xy 139.7 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cadb6a2-4b94-4e1c-a2ad-e4428e98ddc4")
+	)
+	(wire
+		(pts
+			(xy 237.49 111.76) (xy 237.49 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d359fd8-f966-482e-8f08-c372b766e8d4")
+	)
+	(wire
+		(pts
+			(xy 78.74 80.01) (xy 107.95 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e8fdeae-d24a-4adf-ac10-122863791f23")
+	)
+	(wire
+		(pts
+			(xy 139.7 109.22) (xy 170.18 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6285f6b7-a053-486f-9c6b-fdd97733052d")
+	)
+	(wire
+		(pts
+			(xy 19.05 127) (xy 19.05 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63006bbc-d412-4f32-b3b2-3d250ee3f41d")
+	)
+	(wire
+		(pts
+			(xy 199.39 40.64) (xy 199.39 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "63d44437-b4c8-4fa8-b53f-44a6332eddce")
+	)
+	(wire
+		(pts
+			(xy 44.45 109.22) (xy 76.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64b30653-63b1-4b05-8faa-f8d2a399f6d4")
+	)
+	(wire
+		(pts
+			(xy 170.18 142.24) (xy 201.93 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66b19bf8-e8f7-4ecb-be7e-ec45233ff7ea")
+	)
+	(wire
+		(pts
+			(xy 139.7 127) (xy 170.18 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684fde5d-de9e-4662-a78a-c71f11e0351c")
+	)
+	(wire
+		(pts
+			(xy 137.16 91.44) (xy 137.16 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "687b3c08-37fb-4fbf-a07d-9f9244b22b2d")
+	)
+	(wire
+		(pts
+			(xy 201.93 124.46) (xy 201.93 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6892ea82-38e0-404a-a14d-fbc7e7d7b063")
+	)
+	(wire
+		(pts
+			(xy 167.64 91.44) (xy 167.64 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a396ecd-2b8b-4c32-92e8-0558848ab921")
+	)
+	(wire
+		(pts
+			(xy 137.16 74.93) (xy 137.16 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b9850be-0acc-4216-93b4-db52e46f5466")
+	)
+	(wire
+		(pts
+			(xy 78.74 106.68) (xy 78.74 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c826144-b09c-4da2-86c1-f7847047b559")
+	)
+	(wire
+		(pts
+			(xy 137.16 96.52) (xy 167.64 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6cca0717-9fc1-4c9f-a464-9cdfd775a934")
+	)
+	(wire
+		(pts
+			(xy 201.93 127) (xy 242.57 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e012db1-7e3a-4000-947a-b04f63c30a56")
+	)
+	(wire
+		(pts
+			(xy 19.05 109.22) (xy 19.05 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e65e900-73fd-4cec-a61a-d5e2f2ebf731")
+	)
+	(wire
+		(pts
+			(xy 44.45 59.69) (xy 76.2 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6efb2c6c-c055-464e-b761-48b9f52d019d")
+	)
+	(wire
+		(pts
+			(xy 170.18 139.7) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7161a0fb-b656-477d-81e2-6f54f6cdc6aa")
+	)
+	(wire
+		(pts
+			(xy 167.64 57.15) (xy 167.64 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7219c13b-7ee6-44e9-80f5-81ccb8c65ffe")
+	)
+	(wire
+		(pts
+			(xy 78.74 91.44) (xy 78.74 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "72df5ede-53e2-46aa-a952-3e01caf0264f")
+	)
+	(wire
+		(pts
+			(xy 107.95 57.15) (xy 107.95 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75870e36-637b-4171-86f1-bb2aea774def")
+	)
+	(wire
+		(pts
+			(xy 76.2 91.44) (xy 76.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76c97aa8-2be4-47a8-86d3-d6cc4f7231b9")
+	)
+	(wire
+		(pts
+			(xy 76.2 106.68) (xy 76.2 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "76d482de-b839-4c2c-8275-1a7a92653f16")
+	)
+	(wire
+		(pts
+			(xy 137.16 80.01) (xy 167.64 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77883315-1b19-4785-81a3-308d7f4a74d1")
+	)
+	(wire
+		(pts
+			(xy 19.05 77.47) (xy 44.45 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78380747-b609-4814-a116-49fedceb7b6d")
+	)
+	(wire
+		(pts
+			(xy 170.18 77.47) (xy 201.93 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "784648cd-66ad-4a81-a2c1-2c8873edb758")
+	)
+	(wire
+		(pts
+			(xy 139.7 91.44) (xy 139.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b574b58-b0dc-408e-8e1a-73aaece1df38")
+	)
+	(wire
+		(pts
+			(xy 44.45 57.15) (xy 44.45 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bd02745-b8c8-4f30-9cb5-af86f1491467")
+	)
+	(wire
+		(pts
+			(xy 170.18 106.68) (xy 170.18 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5339eb-acf6-42ec-8545-cf08fe15796a")
+	)
+	(wire
+		(pts
+			(xy 76.2 142.24) (xy 105.41 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e1829bf-049c-423d-8bd1-63479d32567b")
+	)
+	(wire
+		(pts
+			(xy 44.45 40.64) (xy 44.45 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e955fa5-7b2b-4943-bd4d-5d725a0cd009")
+	)
+	(wire
+		(pts
+			(xy 167.64 111.76) (xy 199.39 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7efec5ba-7a23-41ee-ab19-3b4e4457aa57")
+	)
+	(wire
+		(pts
+			(xy 107.95 106.68) (xy 107.95 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8060fc33-f88a-4838-937f-9a7ad1739a02")
+	)
+	(wire
+		(pts
+			(xy 201.93 142.24) (xy 242.57 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "815a9189-379f-4978-8384-f2771c4fb438")
+	)
+	(wire
+		(pts
+			(xy 26.67 156.21) (xy 24.13 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "849fdd6a-b9fa-4ee2-873c-544148197c2a")
+	)
+	(wire
+		(pts
+			(xy 201.93 40.64) (xy 201.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "863621c4-8f9f-40cd-b3d0-6eda1049eea0")
+	)
+	(wire
+		(pts
+			(xy 46.99 62.23) (xy 78.74 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "88ba7c6b-dafd-4385-ab41-968f91e3275a")
+	)
+	(wire
+		(pts
+			(xy 201.93 93.98) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c00e518-37f1-4f83-8c9d-9ef4ad0737ec")
+	)
+	(wire
+		(pts
+			(xy 201.93 59.69) (xy 242.57 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ec1b922-fd02-45cc-afa4-2c852aa269d5")
+	)
+	(wire
+		(pts
+			(xy 105.41 139.7) (xy 105.41 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90cb3dac-bdbd-4f32-8b6c-45d2100ddb0d")
+	)
+	(wire
+		(pts
+			(xy 46.99 111.76) (xy 78.74 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91160f0e-0013-45d1-badc-d78941939b28")
+	)
+	(wire
+		(pts
+			(xy 170.18 93.98) (xy 201.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "919d8b45-27ce-4824-899c-06b246aa5899")
+	)
+	(wire
+		(pts
+			(xy 76.2 139.7) (xy 76.2 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "926005ba-6816-4a33-a700-83dcf3efd857")
+	)
+	(wire
+		(pts
+			(xy 242.57 127) (xy 242.57 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "927ab2a4-e320-4d51-8d05-62bd243e0f9e")
+	)
+	(wire
+		(pts
+			(xy 78.74 45.72) (xy 107.95 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9458c7f9-5ed2-4008-82bc-f49a7862dff2")
+	)
+	(wire
+		(pts
+			(xy 139.7 142.24) (xy 170.18 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95164ed6-678b-4d53-8ba2-c7aade40edbe")
+	)
+	(wire
+		(pts
+			(xy 44.45 139.7) (xy 44.45 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "952c094d-9ec9-4c6c-96c9-da459e7c4357")
+	)
+	(wire
+		(pts
+			(xy 78.74 124.46) (xy 78.74 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97e2b00d-1142-4705-9e6c-2f937a6cecb4")
+	)
+	(wire
+		(pts
+			(xy 201.93 91.44) (xy 201.93 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9862f18c-b60a-4a0c-bc24-522612472e71")
+	)
+	(wire
+		(pts
+			(xy 242.57 43.18) (xy 242.57 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9940499f-7e3d-449d-87eb-1540eba5f397")
+	)
+	(wire
+		(pts
+			(xy 26.67 162.56) (xy 19.05 162.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a3fee42-9414-43ba-8e73-ca85b9e1161e")
+	)
+	(wire
+		(pts
+			(xy 78.74 62.23) (xy 107.95 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a8ea1e9-19bd-4bbc-a3b7-22ed70bf3168")
+	)
+	(wire
+		(pts
+			(xy 105.41 40.64) (xy 105.41 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b7ddde3-b737-4ab4-83cf-2efe03cb516f")
+	)
+	(wire
+		(pts
+			(xy 237.49 62.23) (xy 237.49 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9dff4f82-7e94-4533-ae82-ab3542aa4e79")
+	)
+	(wire
+		(pts
+			(xy 199.39 62.23) (xy 237.49 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f1fe32a-7a36-4784-aea1-11fecae40c57")
+	)
+	(wire
+		(pts
+			(xy 107.95 139.7) (xy 107.95 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f8b2298-94c7-4aea-b95a-79191aa2c33a")
+	)
+	(wire
+		(pts
+			(xy 78.74 139.7) (xy 78.74 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a02e86f8-508c-45de-a976-4bfa01519144")
+	)
+	(wire
+		(pts
+			(xy 199.39 57.15) (xy 199.39 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a150cba9-82dc-4672-ba4e-ae442d2db640")
+	)
+	(wire
+		(pts
+			(xy 167.64 40.64) (xy 167.64 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15e22e9-1780-4c1f-95c6-59e120c8e24c")
+	)
+	(wire
+		(pts
+			(xy 19.05 109.22) (xy 44.45 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6c5ab92-bbf2-45ad-ab9f-8704e50e1972")
+	)
+	(wire
+		(pts
+			(xy 167.64 62.23) (xy 199.39 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7f31edd-2b55-4a34-8ad6-2cd2c8f71602")
+	)
+	(wire
+		(pts
+			(xy 78.74 40.64) (xy 78.74 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a92b37be-a8e4-4315-a5a9-e35241d20a13")
+	)
+	(wire
+		(pts
+			(xy 78.74 129.54) (xy 107.95 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a97e39a2-f433-4952-bbb7-0e5073b0e38e")
+	)
+	(wire
+		(pts
+			(xy 167.64 74.93) (xy 167.64 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a9e5e108-58a5-4a28-8cdc-70b4cb8a3967")
+	)
+	(wire
+		(pts
+			(xy 199.39 80.01) (xy 237.49 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa125cd6-db99-4af2-a3d4-d827e9556736")
+	)
+	(wire
+		(pts
+			(xy 199.39 111.76) (xy 237.49 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aa22adc6-d8cb-4d1c-88ab-0e3a5d507c41")
+	)
+	(wire
+		(pts
+			(xy 137.16 40.64) (xy 137.16 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab288911-bb3b-4394-b3f2-be6af8e675e1")
+	)
+	(wire
+		(pts
+			(xy 44.45 74.93) (xy 44.45 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abc9de23-7730-4284-a1e3-e9e15bb6233c")
+	)
+	(wire
+		(pts
+			(xy 137.16 144.78) (xy 167.64 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac56d58b-ed41-41a3-ba7d-841642b8b0b6")
+	)
+	(wire
+		(pts
+			(xy 170.18 74.93) (xy 170.18 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aed33d69-baef-4748-804a-98e68c11edee")
+	)
+	(wire
+		(pts
+			(xy 201.93 109.22) (xy 242.57 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0836c91-314f-4c09-923f-944cd79985d4")
+	)
+	(wire
+		(pts
+			(xy 105.41 124.46) (xy 105.41 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b12ef96e-fcde-4fc0-8837-3fac4ab0d658")
+	)
+	(wire
+		(pts
+			(xy 44.45 43.18) (xy 76.2 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1ae19c9-49bb-4d09-b257-2d8ffeb06a5d")
+	)
+	(wire
+		(pts
+			(xy 170.18 43.18) (xy 201.93 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b297aa8c-495b-4900-a3c8-a4782fa582aa")
+	)
+	(wire
+		(pts
+			(xy 19.05 59.69) (xy 19.05 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2fd3541-0ccc-47fd-aa96-60a1caa7cc7d")
+	)
+	(wire
+		(pts
+			(xy 24.13 80.01) (xy 46.99 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c0d473-f17c-41a7-89c5-290c2323a326")
+	)
+	(wire
+		(pts
+			(xy 19.05 77.47) (xy 19.05 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4321f8d-37fe-4367-bc82-3a0572d33fc4")
+	)
+	(wire
+		(pts
+			(xy 19.05 93.98) (xy 19.05 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5a8c5f2-025c-44c6-b4db-ae6e8d645f9e")
+	)
+	(wire
+		(pts
+			(xy 170.18 40.64) (xy 170.18 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5bd0e81-8e3b-4b28-ab14-66edf0e2fd59")
+	)
+	(wire
+		(pts
+			(xy 199.39 144.78) (xy 237.49 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b71658be-4947-47f4-ba56-b1147374c022")
+	)
+	(wire
+		(pts
+			(xy 199.39 74.93) (xy 199.39 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b74ccaca-1fb0-45c5-b7b2-42af4c07944a")
+	)
+	(wire
+		(pts
+			(xy 76.2 74.93) (xy 76.2 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7652657-b4b5-41cd-b25c-940857272bba")
+	)
+	(wire
+		(pts
+			(xy 139.7 43.18) (xy 170.18 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b949c7ab-37b7-4e76-b7e1-f9017997ce41")
+	)
+	(wire
+		(pts
+			(xy 76.2 43.18) (xy 105.41 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbbef27e-fc23-438f-95cc-1c301817ec74")
+	)
+	(wire
+		(pts
+			(xy 78.74 144.78) (xy 107.95 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc27631e-1e6b-4880-87cb-ea23c48b3a5d")
+	)
+	(wire
+		(pts
+			(xy 24.13 62.23) (xy 24.13 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "be8b01e8-238c-45a1-8875-1b7d4767ed12")
+	)
+	(wire
+		(pts
+			(xy 137.16 62.23) (xy 167.64 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bea37416-4e83-437e-8263-97ad4d3365b7")
+	)
+	(wire
+		(pts
+			(xy 167.64 96.52) (xy 199.39 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0dddfe8-b80c-492e-8acd-8deb21d2969a")
+	)
+	(wire
+		(pts
+			(xy 78.74 57.15) (xy 78.74 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c10b833d-9ceb-4554-95b9-bab34a74915a")
+	)
+	(wire
+		(pts
+			(xy 19.05 142.24) (xy 44.45 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c30458a6-8cb6-4fcb-a3f1-33653325de82")
+	)
+	(wire
+		(pts
+			(xy 201.93 77.47) (xy 242.57 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f5d629-8cdd-4934-b3a5-2f6b546afde0")
+	)
+	(wire
+		(pts
+			(xy 237.49 144.78) (xy 237.49 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4d434ad-1fa2-4487-a949-27f2fda4b227")
+	)
+	(wire
+		(pts
+			(xy 201.93 106.68) (xy 201.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c54591e0-1092-4fb9-a200-833867f831b1")
+	)
+	(wire
+		(pts
+			(xy 199.39 129.54) (xy 237.49 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6b43faf-0c46-4809-aba1-17461bd2da58")
+	)
+	(wire
+		(pts
+			(xy 139.7 57.15) (xy 139.7 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c6fab7d2-96e5-43ae-8c9e-295ac68d0d73")
+	)
+	(wire
+		(pts
+			(xy 76.2 59.69) (xy 105.41 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cab5fad2-d4f0-4228-b5e0-d2aec4880d6e")
+	)
+	(wire
+		(pts
+			(xy 76.2 93.98) (xy 105.41 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cabbdb73-5318-4b35-8585-5b732ce3f621")
+	)
+	(wire
+		(pts
+			(xy 139.7 106.68) (xy 139.7 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cebe47c8-7836-40be-b94c-2aa8ddde8080")
+	)
+	(wire
+		(pts
+			(xy 78.74 96.52) (xy 107.95 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf9aa175-ab70-4e5f-b741-f119cae18695")
+	)
+	(wire
+		(pts
+			(xy 167.64 139.7) (xy 167.64 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d492faec-bd88-4de3-b900-5bc35eb137e6")
+	)
+	(wire
+		(pts
+			(xy 170.18 91.44) (xy 170.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d66a93b9-7fb7-4739-879d-d3dd447660de")
+	)
+	(wire
+		(pts
+			(xy 105.41 91.44) (xy 105.41 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d798cee1-346f-41f6-9c8b-4038960d8d2d")
+	)
+	(wire
+		(pts
+			(xy 242.57 142.24) (xy 242.57 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d8879d9f-0660-4146-b7af-9c37abd3e579")
+	)
+	(wire
+		(pts
+			(xy 24.13 129.54) (xy 24.13 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dab31463-d218-4857-b86e-2f923274bba5")
+	)
+	(wire
+		(pts
+			(xy 199.39 139.7) (xy 199.39 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dbcc90bc-9287-4870-bbcf-98f30975f9a4")
+	)
+	(wire
+		(pts
+			(xy 167.64 129.54) (xy 199.39 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc8c46ea-d41f-4a5c-ac67-f84588ab80a4")
+	)
+	(wire
+		(pts
+			(xy 44.45 93.98) (xy 76.2 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "defec590-495f-4822-b8ce-805a78e4203b")
+	)
+	(wire
+		(pts
+			(xy 137.16 129.54) (xy 167.64 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df14a623-4881-4a01-b4b1-f4fcb83385a5")
+	)
+	(wire
+		(pts
+			(xy 19.05 43.18) (xy 44.45 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df9f51b9-8f6e-42ac-909c-54c53e5c3750")
+	)
+	(wire
+		(pts
+			(xy 199.39 91.44) (xy 199.39 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0a8e793-e8ad-4b83-b9a1-64001e011921")
+	)
+	(wire
+		(pts
+			(xy 76.2 77.47) (xy 105.41 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e25de63f-379e-48c3-a955-0b4874feb508")
+	)
+	(wire
+		(pts
+			(xy 24.13 62.23) (xy 46.99 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3a1c576-7f99-480f-b879-b1f356d39102")
+	)
+	(wire
+		(pts
+			(xy 24.13 96.52) (xy 46.99 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3e64bfb-9600-496d-a4c3-4836253da018")
+	)
+	(wire
+		(pts
+			(xy 46.99 139.7) (xy 46.99 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e588483a-43f9-4a78-be03-aa802297fef0")
+	)
+	(wire
+		(pts
+			(xy 46.99 124.46) (xy 46.99 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b0f44a-11e7-4e4c-a727-4062004a3517")
+	)
+	(wire
+		(pts
+			(xy 24.13 144.78) (xy 24.13 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e80816ac-2a4c-4150-9d54-9087b06683a2")
+	)
+	(wire
+		(pts
+			(xy 199.39 124.46) (xy 199.39 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e85a01b9-2e5d-42e4-9951-26bd0b5cf8b7")
+	)
+	(wire
+		(pts
+			(xy 139.7 59.69) (xy 170.18 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e977eb65-128d-4413-b9f5-973c9e59f36f")
+	)
+	(wire
+		(pts
+			(xy 46.99 40.64) (xy 46.99 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eb70d796-4b47-4d56-a84e-14991c60e890")
+	)
+	(wire
+		(pts
+			(xy 137.16 139.7) (xy 137.16 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ecb4dc92-fb42-4e83-ab60-03fa8db1f500")
+	)
+	(wire
+		(pts
+			(xy 170.18 59.69) (xy 201.93 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ed852c27-5943-4ecd-a85b-fd3375e80f0f")
+	)
+	(wire
+		(pts
+			(xy 19.05 93.98) (xy 44.45 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf97a18-7819-48b1-b759-ff55472c0b6a")
+	)
+	(wire
+		(pts
+			(xy 139.7 93.98) (xy 170.18 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "efd98d8d-0540-4315-81ba-ea23a9bb1532")
+	)
+	(wire
+		(pts
+			(xy 24.13 45.72) (xy 46.99 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f02049ee-ae07-4e7b-8328-6151b72da7fb")
+	)
+	(wire
+		(pts
+			(xy 44.45 127) (xy 76.2 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1a1dae8-4854-4b9c-b86a-e8c33e30439d")
+	)
+	(wire
+		(pts
+			(xy 19.05 59.69) (xy 44.45 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1c8f4e3-8dcd-48b8-af4a-123b1f077637")
+	)
+	(wire
+		(pts
+			(xy 24.13 96.52) (xy 24.13 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2ba7c90-517d-4940-9c86-d03e0bba43c4")
+	)
+	(wire
+		(pts
+			(xy 242.57 93.98) (xy 242.57 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f34573f0-8d7c-48ee-ae76-3313a69535b2")
+	)
+	(wire
+		(pts
+			(xy 24.13 111.76) (xy 24.13 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f474d365-1c6c-4bc2-b922-3d8790a4ae87")
+	)
+	(wire
+		(pts
+			(xy 46.99 106.68) (xy 46.99 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f52b3037-728d-4161-866d-7ceef2520792")
+	)
+	(wire
+		(pts
+			(xy 242.57 109.22) (xy 242.57 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f703aa56-34a9-44f3-99d4-0812b20cc723")
+	)
+	(wire
+		(pts
+			(xy 170.18 109.22) (xy 201.93 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7b247db-64fc-4abf-9e6c-31464637885b")
+	)
+	(wire
+		(pts
+			(xy 201.93 139.7) (xy 201.93 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ca23f9-e105-49f8-a426-24234ecef81d")
+	)
+	(wire
+		(pts
+			(xy 137.16 124.46) (xy 137.16 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fa32f140-63cf-4c20-9105-4ecd3a7fe84d")
+	)
+	(wire
+		(pts
+			(xy 237.49 129.54) (xy 237.49 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbd48464-0900-40d2-bed7-64e8142644cf")
+	)
+	(wire
+		(pts
+			(xy 24.13 129.54) (xy 46.99 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9fa506-cf34-4a79-8034-6e723599c0d1")
+	)
+	(wire
+		(pts
+			(xy 242.57 77.47) (xy 242.57 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcc36ef9-246b-4d7a-b7e0-80d09b229261")
+	)
+	(wire
+		(pts
+			(xy 24.13 144.78) (xy 46.99 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fce502a4-f2d0-4a91-b148-0ca34c568c3d")
+	)
+	(wire
+		(pts
+			(xy 24.13 45.72) (xy 24.13 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fcfe12a7-a104-493a-a7b9-56f06418d6f6")
+	)
+	(wire
+		(pts
+			(xy 107.95 74.93) (xy 107.95 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe9e8211-95c3-4269-871c-65d444787598")
+	)
+	(wire
+		(pts
+			(xy 167.64 144.78) (xy 199.39 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ff804554-cad5-46a7-acab-b0da54e68d61")
+	)
+	(global_label "TC4427_2_OUTA"
+		(shape input)
+		(at 247.65 161.29 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "353270fb-72d8-48a5-b3c8-68d6598e0cd7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.5727 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TC4427_1_OUTB"
+		(shape input)
+		(at 26.67 156.21 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c40dc98b-f32b-458a-82b3-3f8911086a72")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.7741 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TC4427_1_OUTA"
+		(shape input)
+		(at 26.67 162.56 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea1d02eb-2150-474e-810e-e55ef4acd225")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 44.5927 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TC4427_2_OUTB"
+		(shape input)
+		(at 247.65 154.94 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff3a1e3f-19a7-47c6-b775-624953564daf")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 265.7541 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "06ec106f-dd43-4839-bdb6-a411b258f58e")
+		(property "Reference" "LS10"
+			(at 144.78 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "79ae5ecc-0c8a-45fd-89bd-79a644932cb0")
+		)
+		(pin "1"
+			(uuid "513490cf-cb9b-4f9b-b3d2-56b2252c4158")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0d7f48c0-3631-401f-a1d2-d4b784aa4ee5")
+		(property "Reference" "LS37"
+			(at 52.07 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "93ea63ed-2485-4974-9832-711675d9e655")
+		)
+		(pin "1"
+			(uuid "8b1988ef-5f38-4666-b4f8-3446748a5091")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b463699-9228-47a8-816e-17565dd796bb")
+		(property "Reference" "LS24"
+			(at 207.01 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d09bc390-77d9-46f7-974d-e896149fa9a0")
+		)
+		(pin "1"
+			(uuid "8a708833-4853-4d39-b7ba-26f6a47d9f95")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a5e00f-8a53-446a-8090-6ecfb3709f03")
+		(property "Reference" "LS42"
+			(at 207.01 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "59a6d480-b0e4-424c-8b32-74c61a65931b")
+		)
+		(pin "1"
+			(uuid "a210ccb8-5da3-43cf-8eac-9b61ebccba7b")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d1cb2c3-030d-4a46-bce6-79e2603f0026")
+		(property "Reference" "LS12"
+			(at 207.01 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8f20818a-89f9-4d30-aaba-474f4830e4b9")
+		)
+		(pin "1"
+			(uuid "9ec07ef3-7b0d-4ae6-a1fc-ac12b6bd4e15")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "32ed3025-e87f-453a-a8f0-5e0218dbfcd1")
+		(property "Reference" "LS5"
+			(at 175.26 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6f57152f-7a64-471f-94f0-5fa807d60072")
+		)
+		(pin "1"
+			(uuid "d4e74f44-f835-48ee-8570-c85954191613")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "48b494d8-2fda-4bc0-a529-f5f7001003a9")
+		(property "Reference" "LS25"
+			(at 52.07 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e957f3b2-bd8b-4e15-b2c7-0a601955cc79")
+		)
+		(pin "1"
+			(uuid "a767dff4-9613-4f0b-a0a9-7b8b7028d768")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4ebdad7b-0e68-440e-9572-128173010ed6")
+		(property "Reference" "LS40"
+			(at 144.78 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "23b0098e-be48-4edd-8570-660bb789cbdf")
+		)
+		(pin "1"
+			(uuid "8fae961a-6852-4d20-b60d-5d461d56d339")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5015b514-5dc2-49b4-9a13-af35898df3cb")
+		(property "Reference" "LS34"
+			(at 144.78 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "155acd36-2023-4dd0-9cae-e1534d6636ca")
+		)
+		(pin "1"
+			(uuid "41101ce6-7ffc-4f3c-9725-bc3ef0a92863")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5f624b4a-0a68-46a2-9165-cb69e82533dd")
+		(property "Reference" "LS19"
+			(at 52.07 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "32d38a08-c8b0-4558-9c85-eda4ebf0da55")
+		)
+		(pin "1"
+			(uuid "5bcd36b3-746f-4375-897b-9a9e62c2458e")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6a349d9d-a825-4b99-9ad4-04b192001381")
+		(property "Reference" "LS1"
+			(at 52.07 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a5001b56-7d6a-4c36-a243-9c43929921bf")
+		)
+		(pin "1"
+			(uuid "581bead6-15a7-4d44-8e0a-c351a2b83bd0")
+		)
+		(instances
+			(project ""
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "705a6240-5a46-4bd1-94d6-86ded6ddb83b")
+		(property "Reference" "LS26"
+			(at 83.82 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c81334a9-36c3-4d7c-b597-ac418f30db83")
+		)
+		(pin "1"
+			(uuid "a43edd4d-5b87-43c0-be8c-07b615bb4fad")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72e0ab98-d55e-46d5-97b5-be199e88c8e1")
+		(property "Reference" "LS35"
+			(at 175.26 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d36c84af-cac0-4487-8278-e623c90991b4")
+		)
+		(pin "1"
+			(uuid "7a4fc257-7a62-4c70-a045-f2a913b2972e")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76bfb65e-ed3a-4eae-8c8b-06b3d689fc48")
+		(property "Reference" "LS30"
+			(at 207.01 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b58313b8-a487-4c40-aefb-583fe36ff15a")
+		)
+		(pin "1"
+			(uuid "b3229418-1a02-42c3-bd89-52d22f0b2aaa")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77a1ad24-c7a8-4de4-b494-8c1a5667ba8f")
+		(property "Reference" "LS7"
+			(at 52.07 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54581daf-01d9-49a1-88a6-bb9af9726bce")
+		)
+		(pin "1"
+			(uuid "727e33b5-5f0c-48f1-a5c4-3397d3c4ca90")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81e283be-4469-4903-88a8-55709e046c61")
+		(property "Reference" "LS3"
+			(at 113.03 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8a682b29-4238-45a9-829a-a53095485a90")
+		)
+		(pin "1"
+			(uuid "863c08db-29da-49da-b974-d040a0cad497")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86d32663-4f15-48e5-8fb9-b18b877d39bb")
+		(property "Reference" "LS20"
+			(at 83.82 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "40be48b3-52c9-4173-b3cb-462abd2639a2")
+		)
+		(pin "1"
+			(uuid "e0b4a1c9-f6b0-406e-80f8-a25d82cca6eb")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a084d2a8-ac82-444d-a40a-6a2511ed8fec")
+		(property "Reference" "LS29"
+			(at 175.26 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c4a3d850-bc7e-4b35-b4e8-0aaa77c89709")
+		)
+		(pin "1"
+			(uuid "5b5366d8-af46-4248-b475-2913e5d68c2a")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a2ca8e89-c50d-449e-a273-5ad21a6bfdd3")
+		(property "Reference" "LS17"
+			(at 175.26 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "05338772-29a7-4f3d-a8e6-de6f000d3aea")
+		)
+		(pin "1"
+			(uuid "b4453984-269b-4fe9-8279-73cf9b702592")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ac906f5a-453a-4286-8afc-5c4dda7a9bdb")
+		(property "Reference" "LS14"
+			(at 83.82 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3f587b2f-5121-416d-872e-e74522ffddf3")
+		)
+		(pin "1"
+			(uuid "c08ad644-864b-4a9f-bea1-66bcc7f26276")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af310b27-3f8c-4b62-b24f-9cd602516fa7")
+		(property "Reference" "LS38"
+			(at 83.82 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a57fdaa4-6f4d-4c83-8d3c-865a2c593f51")
+		)
+		(pin "1"
+			(uuid "7a5f1cda-911c-47b7-b19a-80d1c384ce3e")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b178f085-471b-4022-bbcc-362c67b752ae")
+		(property "Reference" "LS18"
+			(at 207.01 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "70f58218-cb09-4c27-8a53-1f33e32760aa")
+		)
+		(pin "1"
+			(uuid "ec12c31d-2cc4-4cab-b28c-712a847e4a07")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb1781b1-3ba5-42ba-8930-349c28dbe318")
+		(property "Reference" "LS39"
+			(at 113.03 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3d846df-a619-47d7-914f-8b5b0d11d21b")
+		)
+		(pin "1"
+			(uuid "ceb9e9ec-a185-433b-87cd-435d1a44fd53")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 134.62 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb659fb7-b12e-42f7-98ff-fe73a8f90580")
+		(property "Reference" "LS41"
+			(at 175.26 132.7784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 135.3184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 135.509 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5854666a-6967-44aa-80c7-b917009b8b5c")
+		)
+		(pin "1"
+			(uuid "bbd93f64-8de8-457e-a82a-b57f9b0273a0")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "beef4220-4122-4974-8e41-17e7531b79ec")
+		(property "Reference" "LS2"
+			(at 83.82 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "198df286-6857-4ecf-9410-51e6a115d983")
+		)
+		(pin "1"
+			(uuid "9c0047f1-5e51-4748-abdb-3f577eaacadf")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c1e10a6d-5528-4a1c-b59d-b8227f4835e4")
+		(property "Reference" "LS9"
+			(at 113.03 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "027ef865-7009-458e-9bc9-ccddb809917e")
+		)
+		(pin "1"
+			(uuid "ed306f19-aa03-43ef-947c-f5cec65ec7fb")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ca0671ff-ea88-46ce-b991-5696b913c4e7")
+		(property "Reference" "LS4"
+			(at 144.78 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a5fcb15c-e15e-4cf9-880c-9a6557541a52")
+		)
+		(pin "1"
+			(uuid "0a0119c7-1285-45a1-844f-673331ae609e")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4befe07-3dc9-49a0-8de6-657188ee6748")
+		(property "Reference" "LS15"
+			(at 113.03 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "9adae019-e274-4132-9d76-c99331c8d89f")
+		)
+		(pin "1"
+			(uuid "fa9cf5d5-e116-4dc6-87f4-666d95887fcf")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d540b98b-fc32-48b5-a56d-f5b536677f4a")
+		(property "Reference" "LS21"
+			(at 113.03 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "27ceb2b0-0ade-4351-be4a-1d3cf9d71c0a")
+		)
+		(pin "1"
+			(uuid "554a90b5-bdfb-4878-89f7-1db4b590b9ee")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5626af0-f5a9-4d38-949a-e976f5ad07ec")
+		(property "Reference" "LS31"
+			(at 52.07 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ffe2aa09-c464-4f01-b70b-fe7c6995c2fa")
+		)
+		(pin "1"
+			(uuid "cbfb4fa2-92a7-4bef-a67e-5cce4e40a326")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS31")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 35.56 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7cf9968-6ebc-4796-ae65-ae12aa5ce434")
+		(property "Reference" "LS6"
+			(at 207.01 33.7184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 36.2584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 36.449 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "df77aca1-3cbd-4265-977b-d6c14cf7d7ec")
+		)
+		(pin "1"
+			(uuid "721325bf-d052-4295-a163-75010c27a0ee")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e11478b6-3c2d-4e26-9005-7ef2e6dd78b0")
+		(property "Reference" "LS16"
+			(at 144.78 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "a7a56b48-9f1a-4a70-b604-700f21fa342e")
+		)
+		(pin "1"
+			(uuid "2a256ba2-711f-47d9-8200-74461d462173")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e473ac10-f9b7-4d18-bc80-da8538641e3a")
+		(property "Reference" "LS11"
+			(at 175.26 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6da63af6-5acb-4755-b73c-ed560b0a9a6c")
+		)
+		(pin "1"
+			(uuid "2909b24a-578b-418d-b59f-d6657d04037a")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 167.64 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e55a5384-74fc-42ee-a700-123dc28a8554")
+		(property "Reference" "LS23"
+			(at 175.26 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 175.26 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 168.91 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 168.91 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 167.64 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "57bc111a-5324-4795-b7cb-025b1dd1b383")
+		)
+		(pin "1"
+			(uuid "a2fae181-d92f-465a-9d75-45fc5ece0ed5")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb33565a-c05b-409c-89e4-1c5009933c54")
+		(property "Reference" "LS28"
+			(at 144.78 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "864c913d-78f1-4b03-8422-e0038fdedf5c")
+		)
+		(pin "1"
+			(uuid "6ded04ff-3058-4c66-b206-c9234fceb8d5")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS28")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 101.6 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eb7eb388-94b6-421f-8013-ee13756923d1")
+		(property "Reference" "LS27"
+			(at 113.03 99.7584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 102.2984 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 102.489 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3ad9edfc-bb21-4d45-b72d-fe73a93cb1f1")
+		)
+		(pin "1"
+			(uuid "bc502cdc-68cf-41ec-88f2-549b52ff7a8d")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 199.39 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec6a2907-eb24-4bfb-a1e5-1ca39a4f89d1")
+		(property "Reference" "LS36"
+			(at 207.01 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 207.01 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 200.66 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 199.39 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "147809eb-6fad-4fef-a70b-454393f136eb")
+		)
+		(pin "1"
+			(uuid "4105c7a1-7174-48aa-9172-8b614f9384ba")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 105.41 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f14380d9-b4c6-4e06-8a35-d21b0c0c1406")
+		(property "Reference" "LS33"
+			(at 113.03 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 113.03 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 105.41 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6827937c-6322-4659-bed2-f2a5300acc84")
+		)
+		(pin "1"
+			(uuid "c907e50c-ff3a-4fd6-9e6f-a2d02020f78d")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 44.45 69.85 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f4e979a5-d918-4986-b539-41cfad3b7171")
+		(property "Reference" "LS13"
+			(at 52.07 68.0084 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 52.07 70.5484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 70.739 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 44.45 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95a616a5-c8f3-4cd3-8af7-191912726cee")
+		)
+		(pin "1"
+			(uuid "7acdf5df-28b9-48e0-af5b-445402549fb6")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 137.16 86.36 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f704a6fa-cb14-45ac-83ac-a7d9c5f826d8")
+		(property "Reference" "LS22"
+			(at 144.78 84.5184 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 144.78 87.0584 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 87.249 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 137.16 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "79c8642f-b80b-4284-bf70-6d0ae6fb8eb9")
+		)
+		(pin "1"
+			(uuid "e8b507b9-ca6c-423f-aca0-3256674a87fb")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 119.38 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb5fc4c7-72c9-4a05-9df0-ffd71fcc6b5a")
+		(property "Reference" "LS32"
+			(at 83.82 117.5384 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 120.0784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 120.269 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "54baf48a-be8d-496d-9874-fc0c808b5b0d")
+		)
+		(pin "1"
+			(uuid "d4978e0a-6a79-480b-83c1-123563b34151")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Speaker_Crystal")
+		(at 76.2 52.07 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffc8952f-0523-4d6c-ab31-fffcb861c828")
+		(property "Reference" "LS8"
+			(at 83.82 50.2284 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Speaker_Crystal"
+			(at 83.82 52.7684 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 52.959 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Crystal speaker/transducer"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "6fc83b74-bf82-47a8-a4ee-5bcc9e3209ad")
+		)
+		(pin "1"
+			(uuid "8eb24946-8408-4819-a5ea-3184c23dce08")
+		)
+		(instances
+			(project "speaker_array"
+				(path "/d9380915-48cd-4551-ac57-6f3b373ef610"
+					(reference "LS8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
