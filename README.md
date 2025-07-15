@@ -1,40 +1,29 @@
-# 2025ESWContest_free_AIM 수정필요!!!!
+# 2025ESWContest_free_AIM 
 
-# Enhanced Ultrasonic Directional Speaker
-Original Repository: [gururise/directional_speaker](https://github.com/gururise/directional_speaker)
-Original REPO Youtube link: [YouTube](https://www.youtube.com/watch?v=9hD5FPVSsV0)
+## 인식된 객체를 위한 초지향성 사운드 타겟팅
+획일적인 정보 제공 방식에서 벗어나, 관람객의 특성에 맞춰 설명의 난이도를 조절하고 집중도를 높여주려는 아이디어에서 출발했습니다. 이는 관람객 개개인에게 더욱 풍부하고 몰입감 있는 문화 경험을 제공하고자 하는 목표에서 비롯되었습니다.
 
-The sound quality of my directional speaker has improved significantly after adding a decoupling capacitor to the TC4427 MOSFET driver.
-Additionally, I implemented an inductor-based low-pass filter (LPF).
-As a result, the circuit now includes both an active high-pass filter (HPF) and a passive LPF using an inductor. The LPF uses the transducer's capacitance as part of the filter, meaning the inductance value must be adjusted dynamically depending on the number of transducers used.
+도슨트 서비스 현장에서 특정 대상에게만 정보를 전달해야 하는 필요성을 느끼고, 초음파의 비선형성을 이용해 공기 중에서 소리를 복조시키는 초지향성 스피커 기술이 이 문제에 대한 혁신적인 해결책이 될 수 있다고 판단했습니다. 특히, 소리가 전파되는 가청 영역을 제어하여 불필요한 소음 없이 원하는 대상에게만 정보를 전달할 수 있다는 점에 매료되었습니다.
 
-## Repository Contents
-1. C++ Code for STM32F103C8T6 Microcontroller
+따라서 성인과 아이를 실시간으로 인식하고, 인식된 객체의 특성에 맞춰 난이도가 조절된 음성 해설을 초지향성 스피커를 통해 해당 객체에게만 선별적으로 전송하는 맞춤형 도슨트 시스템을 개발하였습니다.
 
-There are two versions of the firmware:
+## 코드 정보
+**src/STM32**
 
-One for the Arduino IDE
-One for STM32CubeIDE
+PWM 작업을 수행하는 코드 입니다.PB2와 PC13 두가지 버전이 있습니다. 사용한 보드의 내장 LED 핀 번호에 맞는 코드를 사용하면 됩니다.
+또한 .ioc 파일을 이용하여 STM32CUBEIDE에서 프로젝트 로드를 할 수 있습니다. 
 
-⚠️ Depending on the board you're using, you need to check which pin is assigned to the onboard LED. Either modify the code accordingly or use the correct version that matches your board's configuration.
+**/src/STM32/Circuit Diagram**
 
-2. KiCad Schematic
+회로도가 포함되어 있습니다. KiCad로 작성되었습니다.
 
-The full schematic of the directional speaker circuit is provided in KiCad format.
+**/src/AI**
 
-## Board Information
-This project uses the STM32F103C8T6 WeAct BluePill Plus board:
+객체인식 시스템의 파이썬 코드가 있습니다.
+
+## MCU 보드 정보
+STM32F103C8T6을 사용하였습니다.
 🔗 [WeActStudio/BluePill-Plus GitHub](https://github.com/WeActStudio/BluePill-Plus)
-
-## Transducer
-I used 42 units of the V40AN16T transducer, which operates at 40 kHz.
-Make sure to use transducers that match this frequency.
-
-## Can I Use Other Op-Amps or MOSFET Drivers?
-Yes! You're free to upgrade the components.
-
-For example, you can use a MOSFET driver + discrete MOSFET configuration for better performance.
-As you might know, using only a MOSFET driver to amplify the PWM signal isn’t ideal, but it still works for this application.
 
 ---
 
