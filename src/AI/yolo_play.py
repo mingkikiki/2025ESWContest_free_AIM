@@ -1,8 +1,3 @@
-# YOLOv8-face + 연령 분류 (대상 부재 시 즉시 초기화 기능 추가 최종 버전)
-# 수정사항:
-# 1. 화면에 인식된 얼굴이 하나도 없을 경우, 모든 오디오 및 추적 상태를 즉시 초기화
-# 2. 재생 중인 TTS도 즉시 중지하여 더 나은 사용자 경험 제공
-
 import cv2
 import numpy as np
 from ultralytics import YOLO
@@ -23,13 +18,15 @@ except NameError:
 
 YOLO_MODEL_PATH = os.path.join(script_dir, "yolov8n-face.pt")
 AGE_MODEL_PATH = os.path.join(script_dir, "models/age_classifier_v5.keras") 
-ADULT_SOUND_FILE = os.path.join(script_dir, 'mask_normal_tts.mp3')
-CHILD_SOUND_FILE = os.path.join(script_dir, 'mask_child_tts.mp3')
+ADULT_SOUND_FILE = os.path.join(script_dir, 'normal_tts.mp3')
+CHILD_SOUND_FILE = os.path.join(script_dir, 'child_tts.mp3')
 
 pygame.mixer.init()
 script_start_time = time.time()
 INITIAL_GRACE_PERIOD = 5.0
 CONSECUTIVE_SECONDS_REQUIRED = 5.0
+empty_scene_start_time = None
+RESET_GRACE_PERIOD = 1.0
 
 # -------------------------------
 # [1] 모델 로드
@@ -39,17 +36,44 @@ yolo_model = YOLO(YOLO_MODEL_PATH)
 age_model = load_model(AGE_MODEL_PATH)
 
 # -------------------------------
-# [2] 얼굴 전처리 및 분류 함수 (이전과 동일)
+# [2] 얼굴 이미지 전처리 함수 (CLAHE 역광 보정 추가됨)
 # -------------------------------
 def preprocess_face(face_bgr):
     h, w = face_bgr.shape[:2]
-    if h < 40 or w < 40: return None
+    if h < 40 or w < 40:
+        return None
     try:
-        face_resized = cv2.resize(face_bgr, (224, 224))
-        face_rgb = cv2.cvtColor(face_resized, cv2.COLOR_BGR2RGB)
-        return np.expand_dims(preprocess_input(face_rgb), axis=0)
-    except: return None
+        # --- [수정됨] 역광 보정을 위한 CLAHE 적용 ---
+        # 1. BGR 이미지를 LAB 색 공간으로 변환 (L: 밝기, a,b: 색상 정보)
+        lab = cv2.cvtColor(face_bgr, cv2.COLOR_BGR2LAB)
+        
+        # 2. L(밝기) 채널만 분리
+        l, a, b = cv2.split(lab)
+        
+        # 3. CLAHE 객체 생성 및 L 채널에 적용하여 대비를 향상시킴
+        clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
+        cl = clahe.apply(l)
+        
+        # 4. 향상된 L 채널을 다시 병합
+        lab_enhanced = cv2.merge((cl, a, b))
+        
+        # 5. 다시 BGR 색 공간으로 변환
+        face_bgr_enhanced = cv2.cvtColor(lab_enhanced, cv2.COLOR_LAB2BGR)
+        # --- CLAHE 적용 끝 ---
 
+        # 이후 로직은 보정된 이미지를 사용
+        face_resized = cv2.resize(face_bgr_enhanced, (224, 224))
+        face_rgb = cv2.cvtColor(face_resized, cv2.COLOR_BGR2RGB)
+        preprocessed_face = preprocess_input(face_rgb)
+        
+        return np.expand_dims(preprocessed_face, axis=0)
+    except Exception as e:
+        print(f"얼굴 전처리 중 오류: {e}")
+        return None
+
+# -------------------------------
+# [3] 얼굴 분류 함수
+# -------------------------------
 def predict_age_prob(face_bgr):
     preprocessed = preprocess_face(face_bgr)
     if preprocessed is None: return None
@@ -64,13 +88,10 @@ last_triggered_sound_class = None
 def get_smoothed_label(face_id):
     if face_id not in face_histories or not face_histories[face_id]['probs']:
         return "N/A", (255, 255, 255)
-    
     avg_prob = np.mean(face_histories[face_id]['probs'])
-    
     if avg_prob > 0.6: final_label, color = "adult", (0, 0, 255)
     elif avg_prob < 0.4: final_label, color = "child", (255, 0, 0)
     else: final_label, color = "Uncertain", (0, 255, 255)
-        
     return f"ID {face_id}: {final_label} ({avg_prob:.2f})", color
 
 def get_final_class(face_id):
@@ -81,7 +102,7 @@ def get_final_class(face_id):
     else: return "Uncertain"
 
 # -------------------------------
-# [5] 실시간 웹캠 연동 (상태 초기화 로직 추가)
+# [5] 실시간 웹캠 연동
 # -------------------------------
 cap = cv2.VideoCapture(0)
 
@@ -101,10 +122,9 @@ while True:
 
         for box, face_id in zip(boxes, ids):
             current_frame_ids.add(face_id)
-            
             if face_id not in face_histories:
                 face_histories[face_id] = {'probs': deque(maxlen=15), 'class_start_time': None, 'last_class': None}
-
+            
             x1, y1, x2, y2 = box
             padding = 20
             x1_pad, y1_pad = max(0, x1 - padding), max(0, y1 - padding)
@@ -121,29 +141,31 @@ while True:
             cv2.putText(frame, display_label, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
             
             current_class = get_final_class(face_id)
-            last_class = face_histories[face_id]['last_class']
+            last_class = face_histories[face_id].get('last_class')
 
             if current_class is not None and current_class != "Uncertain":
                 if current_class != last_class:
                     face_histories[face_id]['last_class'] = current_class
                     face_histories[face_id]['class_start_time'] = time.time()
-                elif face_histories[face_id]['class_start_time'] is not None:
+                elif face_histories[face_id].get('class_start_time') is not None:
                     duration = time.time() - face_histories[face_id]['class_start_time']
                     if duration >= CONSECUTIVE_SECONDS_REQUIRED:
-                        if current_class == 'child':
-                            child_alert_triggered = True
-                        elif current_class == 'adult':
-                            adult_alert_triggered = True
-    
-    # [수정] 모든 대상이 사라졌을 때 시스템 상태 즉시 초기화
-    if not current_frame_ids:
-        if pygame.mixer.music.get_busy():
-            pygame.mixer.music.stop() # 재생 중인 오디오 중지
-            print("모든 대상이 사라져 오디오를 중지하고 상태를 초기화합니다.")
-        last_triggered_sound_class = None
-        face_histories.clear() # 모든 추적 기록 삭제
+                        if current_class == 'child': child_alert_triggered = True
+                        elif current_class == 'adult': adult_alert_triggered = True
 
-    # 프레임의 모든 얼굴을 확인한 후, 우선순위에 따라 단 한 번만 오디오 재생 결정
+    if not current_frame_ids:
+        if empty_scene_start_time is None:
+            empty_scene_start_time = time.time()
+        elif time.time() - empty_scene_start_time >= RESET_GRACE_PERIOD:
+            if pygame.mixer.music.get_busy():
+                pygame.mixer.music.stop()
+                print(f"{RESET_GRACE_PERIOD}초간 대상이 없어 오디오를 중지하고 상태를 초기화합니다.")
+            last_triggered_sound_class = None
+            face_histories.clear()
+            empty_scene_start_time = None
+    else:
+        empty_scene_start_time = None
+
     if time.time() - script_start_time > INITIAL_GRACE_PERIOD:
         if child_alert_triggered:
             if last_triggered_sound_class != 'child' and not pygame.mixer.music.get_busy():
@@ -160,12 +182,10 @@ while True:
                     pygame.mixer.music.play()
                     last_triggered_sound_class = 'adult'
         else:
-            # 아무도 경보 조건을 만족하지 않으면, 다음에 바로 소리가 날 수 있도록 상태를 초기화
-            if current_frame_ids: # 화면에 사람은 있지만 아직 5초가 안 된 경우
+            if current_frame_ids:
                  last_triggered_sound_class = None
 
-
-    cv2.imshow("Multi-face Age Classification with Tracking", frame)
+    cv2.imshow("Multi-face Age Classification with Tracking (Backlight Corrected)", frame)
     
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
